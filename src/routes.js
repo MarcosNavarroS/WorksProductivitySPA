@@ -38,12 +38,16 @@ const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'));
 // const Users = React.lazy(() => import('./views/users/Users'));
 // const User = React.lazy(() => import('./views/users/User'));
 
-const WorkersList = React.lazy(() => import('./pages/workers/List'));
+const WorkersList = React.lazy(() => import('./pages/workers/WorkerList'));
+const WorkersCreate = React.lazy(() => import('./pages/workers/WorkerCreate'));
+const WorkersEdit = React.lazy(() => import('./pages/workers/WorkerEdit'));
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
   { path: '/trabajadores/listado', name: 'Workers List', component: WorkersList },
+  { path: '/trabajadores/crear', name: 'Workers Create', component: WorkersCreate },
+  { path: '/trabajadores/:workerId', name: 'Workers Edit', component: WorkersEdit },
   // { path: '/theme', name: 'Theme', component: Colors, exact: true },
   // { path: '/theme/colors', name: 'Colors', component: Colors },
   // { path: '/theme/typography', name: 'Typography', component: Typography },
