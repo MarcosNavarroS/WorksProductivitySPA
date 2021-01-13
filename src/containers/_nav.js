@@ -18,6 +18,12 @@ const _nav =  [
   },
   {
     _tag: 'CSidebarNavItem',
+    name: 'Crear',
+    to: '/trabajadores/crear',
+    icon: 'cil-drop',
+  },
+  {
+    _tag: 'CSidebarNavItem',
     name: 'Listado',
     to: '/trabajadores/listado',
     icon: 'cil-drop',

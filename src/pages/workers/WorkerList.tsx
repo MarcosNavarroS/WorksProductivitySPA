@@ -1,9 +1,9 @@
-﻿import React from 'react'
-import {CBadge, CCard, CCardBody, CCardHeader, CCol, CDataTable, CRow} from "@coreui/react";
+import React from 'react'
+import {CCard, CCardBody, CCardHeader, CCol, CDataTable, CRow} from "@coreui/react";
 import workersService from "../../store/workersService";
 import {AxiosResponse} from "axios";
 
-var dateformat = require("dateformat")
+const dateformat = require("dateformat")
 
 interface Worker {
   identityCardNumber: string;
@@ -34,7 +34,7 @@ const scopedSlots = {
   },
 }
 
-class List extends React.Component<{}, Workers> {
+class WorkerList extends React.Component<{}, Workers> {
 
   constructor(props: {}) {
     super(props);
@@ -82,4 +82,4 @@ class List extends React.Component<{}, Workers> {
 
 
 
-export default List
+export default WorkerList
